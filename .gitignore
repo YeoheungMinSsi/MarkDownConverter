@@ -1,0 +1,24 @@
+# Local Python environment and generated caches
+/.venv/
+/.cache/
+__pycache__/
+*.py[cod]
+
+# Converted output and local sample document
+/result/
+/*.pdf
+/*.docs
+/*.docx
+/*.hpw
+/*.html
+/*.md
+/*.hpwx
+
+# Local secrets
+.env
+.env.*
+!.env.example
+
+# Local editor settings
+/.vscode/
+/.idea/
