@@ -26,7 +26,7 @@ if (-not (Test-Path -LiteralPath $pythonPath -PathType Leaf)) {
     }
 }
 
-& $pythonPath -m pip show docling *> $null
+& $pythonPath -c "import importlib.util, sys; sys.exit(0 if importlib.util.find_spec('docling') else 1)"
 if ($LASTEXITCODE -ne 0) {
     Write-Host "Installing dependencies (first run may take several minutes)..."
     & $pythonPath -m pip install -r "$PSScriptRoot\requirements.txt"
