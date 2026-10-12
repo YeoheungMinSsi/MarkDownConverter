@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # file_to_md
 
 Docling으로 PDF와 지원 문서를 Markdown으로 변환합니다.
@@ -31,3 +32,10 @@ Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned
 `result/example.md`에 UTF-8로 저장합니다. 같은 이름이 있으면 `example1.md`, `example2.md` 순서로 첫 빈 이름을 사용하며 기존 파일은 보존합니다.
 
 PDF와 DOCX 변환은 검증했습니다. Docling이 지원하지 않는 형식은 변환할 수 없으며, PDF의 줄 경계에서 단어가 분리되는 문제는 남을 수 있습니다.
+=======
+# 프로젝트 개요
+- pdf파일을 md 파일로 변환
+- 파일 실행시 run.ps1 [파일명.pdf]로 올리면 result 디렉토리에 파일명.md 파일로 생성해줌
+- pdf 파일은 메인 디렉토리 아래에서 실행하면됨
+- 
+>>>>>>> c842ccba0680661c2d9b1cb34ae4bb5d6af93a41
